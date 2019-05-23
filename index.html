@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,49 +8,206 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shortcut icon" href="favicon.ico" />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/pixyll.css" type="text/css">
 
     <!-- Fonts -->
-    <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet'
+        type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
 
+    <style>
+        body {
+            background: #f6f6f6;
+            font-family: "Merriweather", "PT Serif", Georgia, "Times New Roman", serif;
+            text-align: justify;
+        }
+
+        .container {
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            padding: 20px 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-left {
+            font-size: 25px;
+            color: #333333;
+        }
+
+        .header-right {
+            font-size: 16px;
+            color: #888888;
+        }
+
+        .header-right span {
+            margin-left: 15px;
+            cursor: pointer;
+        }
+
+        .header-right span:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            background: #ffffff;
+            padding: 40px;
+        }
+
+        .about-title {
+            font-size: 23px;
+            font-weight: bold;
+            color: #333333;
+        }
+
+        .intro-title {
+            font-size: 18px;
+            color: #333333;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .intro-content {
+            font-size: 16px;
+            color: #666666;
+            margin-top: 10px;
+            line-height: 25px;
+        }
+
+        .sign-wrap {
+            text-align: right;
+        }
+
+        .sign-wrap img {
+            width: 100px;
+            margin-top: 15px;
+        }
+
+        .info-block {
+            padding: 20px 0;
+            border-top: 1px solid #eeeeee;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .block-col {
+            width: 50%;
+            flex-shrink: 0;
+        }
+
+        .info-title {
+            font-size: 16px;
+            color: #666666;
+        }
+
+        .info-item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .item-title {
+            font-size: 15px;
+            color: #333333;
+            width: 120px;
+            flex-shrink: 0;
+        }
+
+        .item-content {
+            font-size: 14px;
+            color: #666666;
+            flex-grow: 1;
+        }
+    </style>
 </head>
 
-<body class="">
-    <div class="site-wrap">
-        <header class="site-header px2 px-responsive">
-            <div class="mt2 wrap">
-                <div class="measure">
-                    <a href="" class="site-title">阿毛蛋蛋</a>
-                    <nav class="site-nav right">
-                        <a >关于</a>
-                        <a >联系我</a>
-
-                    </nav>
-                </div>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-left">阿毛蛋蛋</div>
+            <div class="header-right">
+                <span>关于</span>
+                <span>联系</span>
             </div>
         </header>
 
+        <section class="content">
+            <div class="about-title">ABOUT ME</div>
+            <div class="intro-title">大家好，我叫老王！</div>
+            <div class="intro-content">
+                这个地方的地名有点怪，叫庵赵庄。赵，是因为庄上大都姓赵。叫做庄，可是人家住得很分散，这里两三家，那里两三家。一出门，远远可以看到，走起来得走一会，因为没有大路，都是弯弯曲曲的田埂。庵，是因为有一个庵。庵叫苦提庵，可是大家叫讹了，叫成荸荠庵。连庵里的和尚也这样叫。“宝刹何处？”——“荸荠庵。”庵本来是住尼姑的。“和尚庙”、“尼姑庵”嘛。可是荸荠庵住的是和尚。也许因为荸荠庵不大，大者为庙，小者为庵。
+            </div>
+            <div class="sign-wrap">
+                <img src="image/sign.jpg" alt="">
+            </div>
 
-        <div class="post p2 p-responsive wrap" role="main">
-            <div class="measure">
-                <div class="home">
-
-                    <div class="posts">
-
-                        <div class="post">
-                            <a class="post-link">
-                                <p class="post-meta">May 23, 2019</p>
-                                <h3 class="h2 post-title">阿毛蛋蛋</h3>
-                                <p class="post-summary">屌的一逼</p>
-                            </a>
-                        </div>
+            <div class="info-block">
+                <div class="block-col">
+                    <div class="info-title">个人信息</div>
+                    <div class="info-item">
+                        <div class="item-title">姓名</div>
+                        <div class="item-content">叫爸爸</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="item-title">出生年月</div>
+                        <div class="item-content">1989.03.04</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="item-title">手机</div>
+                        <div class="item-content">123456789</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="item-title">E-MAIL</div>
+                        <div class="item-content">12154@qq.com</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="item-title">感情状况</div>
+                        <div class="item-content">母胎solo</div>
                     </div>
                 </div>
-
+                <div class="block-col">
+                    <div class="info-title">语言技能</div>
+                    <div class="info-item">
+                        <div class="item-title">英语</div>
+                        <div class="item-content">CET-6</div>
+                    </div>
+                </div>
             </div>
-        </div>
+
+            <div class="info-block">
+
+                <div class="block-col">
+                    <div class="info-title">兴趣还好</div>
+                </div>
+                <div class="block-col">
+                    <div class="info-title">专业技能</div>
+                    <div class="info-item">
+                        <div class="item-content">精通HTML5、CSS3、JavaScript/ES6</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="item-content">掌握常用的前端开发工具</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="item-content">熟悉移动WEB开发，具备跨终端（Mobile+PC）的前端开发能力，熟悉网络协议（HTTP/SSL），熟悉常见安全问题和对策</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="item-content">熟悉前端工程化与模块化开发，并有实践经验（如gulp/webpack、VueJS/React等）</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="item-content">至少熟悉一门非前端的语言（如NodeJS/Java/PHP/C/C++/Python/Ruby/Golang等），并有实践经验</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="item-content">良好的团队协作能力，提升团队研发效率，实现极致性能，通过创新交互优化产品体验</div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
+
 </html>
